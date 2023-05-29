@@ -5,15 +5,15 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps: 
-        - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-        - name: running file
-          run: node index.js
+      - name: running file
+        run: node index.js
   second-job:
     runs-on: ubuntu-latest
     setps: 
-        - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-        - name: testing
-          needs: first-job
-          run: node -v
+      - name: testing
+        needs: first-job
+        run: node -v
