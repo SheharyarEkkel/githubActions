@@ -1,0 +1,8 @@
+name: checking
+
+on: push 
+jobs:
+  first-job:
+      steps: 
+       - node index.js
+
