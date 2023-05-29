@@ -3,8 +3,8 @@ name: checking
 on: push 
 jobs:
   first-job:
-   runs-on: ubuntu-latest
-      steps: 
-       - name: running file
-         run: node index.js
+    runs-on: ubuntu-latest
+    steps: 
+        name: running file
+        run: node index.js
 
