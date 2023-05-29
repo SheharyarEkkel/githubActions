@@ -3,6 +3,7 @@ name: checking
 on: push 
 jobs:
   first-job:
+   runs-on: ubuntu-latest
       steps: 
        - node index.js
 
