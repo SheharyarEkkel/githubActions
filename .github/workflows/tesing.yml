@@ -7,3 +7,9 @@ jobs:
     steps: 
         - name: running file
           run: node index.js
+  second-job:
+    runs-on: ubuntu-latest
+    setps: 
+        - name: testing
+          needs: first-job
+          run: node -v
