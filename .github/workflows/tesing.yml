@@ -5,5 +5,6 @@ jobs:
   first-job:
    runs-on: ubuntu-latest
       steps: 
-       - node index.js
+       - name: running file
+         run: node index.js
 
