@@ -12,6 +12,8 @@ jobs:
   second-job:
     runs-on: ubuntu-latest
     setps: 
+        - uses: actions/checkout@v2
+
         - name: testing
           needs: first-job
           run: node -v
